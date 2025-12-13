@@ -1,0 +1,227 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+body {
+background: #0f172a;
+color: #e5e7eb;
+line-height: 1.6;
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 60px;
+background: #020617;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+
+.name {
+font-size: 22px;
+font-weight: 600;
+color: #38bdf8;
+}
+
+nav a {
+margin-left: 25px;
+text-decoration: none;
+color: #e5e7eb;
+font-weight: 400;
+transition: 0.3s;
+}
+
+nav a:hover {
+color: #38bdf8;
+}
+
+#home {
+padding: 80px 60px;
+}
+
+.home-container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.home-text {
+width: 55%;
+}
+
+.main h2 {
+font-size: 36px;
+color: #38bdf8;
+margin-bottom: 15px;
+}
+
+.main p {
+max-width: 600px;
+margin-bottom: 15px;
+color: #cbd5f5;
+}
+
+.icon {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+}
+
+.icon img {
+filter: invert(1);
+transition: 0.3s;
+}
+
+.icon img:hover {
+transform: scale(1.2);
+}
+
+.cv {
+        margin-left: 20px;
+        padding: 10px 20px;
+        background: #38bdf8;
+        color: #020617;
+        border-radius: 25px;
+        font-weight: 600;
+        transition: 0.3s;
+}
+
+.cv:hover {
+background: #0ea5e9;
+}
+
+.home-img {
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+}
+
+.home-img img {
+        width: 280px;
+        height: 280px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #38bdf8;
+        box-shadow: 0 0 25px rgba(56,189,248,0.6);
+}
+
+#about {
+        padding: 60px;
+        background: #020617;
+}
+
+#about h2 {
+font-size: 28px;
+margin-bottom: 20px;
+color: #38bdf8;
+}
+
+#about p {
+        margin-bottom: 15px;
+        max-width: 800px;
+}
+
+#education {
+        padding: 60px;
+}
+
+#education h2 {
+        color: #38bdf8;
+        margin-bottom: 20px;
+}
+
+#education ul {
+list-style: none;
+}
+
+#education li {
+        background: #020617;
+        margin-bottom: 15px;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(56,189,248,0.2);
+}
+
+#skills {
+        padding: 60px;
+        background: #020617;
+}
+
+#skills h2 {
+        color: #38bdf8;
+        margin-bottom: 25px;
+}
+
+.skills-grid {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+}
+
+.skill-box {
+        padding: 15px 30px;
+        background: #0f172a;
+        border-radius: 30px;
+        box-shadow: 0 0 15px rgba(56,189,248,0.3);
+        transition: 0.3s;
+}
+
+.skill-box:hover {
+        background: #38bdf8;
+        color: #020617;
+        transform: translateY(-5px);
+}
+
+#ccontact {
+padding: 60px;
+}
+
+#ccontact h2 {
+        color: #38bdf8;
+        margin-bottom: 20px;
+        }
+
+form {
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+}
+
+form input,
+form textarea {
+        padding: 12px;
+        border-radius: 8px;
+       
+}
+
+form button {
+        padding: 12px;
+        background: #38bdf8;
+        
+        border-radius: 25px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s;
+}
+
+form button:hover {
+background: #0ea5e9;
+}
+.image{
+        width:100%;
+        max-width:120px;
+        aspect-ratio: 1/1;
+
+        border-radius:16px;
+        border:3px solid #38bdf8;
+        box-shadow:0 0 18px rgba(56,189,248,.4);
+
+
+}
