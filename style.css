@@ -303,3 +303,106 @@ footer{position:relative;z-index:1;padding:30px 6% 60px;}
   .topbar{display:none;}
   .resume-shell{box-shadow:none;border:none;backdrop-filter:none;}
 }
+/* ================================================================
+   SMARTSHELF PROJECT - ADD TO style.css
+   ================================================================ */
+
+/* Featured Project Card */
+.project-card-featured {
+    border: 1px solid rgba(79, 195, 247, 0.15);
+    background: linear-gradient(135deg, rgba(79, 195, 247, 0.05), rgba(26, 58, 92, 0.05));
+}
+
+/* Tech Stack Pills */
+.project-tech-stack {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.tech-pill {
+    background: rgba(79, 195, 247, 0.12);
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    color: #4fc3f7;
+    font-weight: 500;
+    border: 1px solid rgba(79, 195, 247, 0.08);
+}
+
+/* Project Buttons */
+.project-btn {
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.project-btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-shop {
+    background: #1a3a5c;
+    color: white;
+}
+.btn-shop:hover {
+    background: #2a5f7a;
+    box-shadow: 0 4px 12px rgba(26, 58, 92, 0.3);
+}
+
+.btn-consumer {
+    background: #6a1b9a;
+    color: white;
+}
+.btn-consumer:hover {
+    background: #7b1fa2;
+    box-shadow: 0 4px 12px rgba(106, 27, 154, 0.3);
+}
+
+.btn-presentation {
+    background: #00695c;
+    color: white;
+}
+.btn-presentation:hover {
+    background: #00897b;
+    box-shadow: 0 4px 12px rgba(0, 105, 92, 0.3);
+}
+
+.btn-github {
+    background: #333;
+    color: white;
+}
+.btn-github:hover {
+    background: #555;
+    box-shadow: 0 4px 12px rgba(51, 51, 51, 0.3);
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .project-card-featured {
+        border: 1px solid rgba(79, 195, 247, 0.1);
+        background: linear-gradient(135deg, rgba(79, 195, 247, 0.05), rgba(26, 58, 92, 0.05));
+    }
+    .tech-pill {
+        background: rgba(79, 195, 247, 0.08);
+        color: #4fc3f7;
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .project-links {
+        flex-direction: column;
+    }
+    .project-btn {
+        justify-content: center;
+        width: 100%;
+    }
+}
