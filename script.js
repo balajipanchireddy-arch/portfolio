@@ -37,7 +37,13 @@ if (contactForm) {
     const message = document.getElementById('cf-message').value;
     const subject = encodeURIComponent('Portfolio contact from ' + name);
     const body = encodeURIComponent(message + '\n\n— from ' + email);
-    window.location.href = `mailto:balajipanchireddy@gmail.com?subject=${subject}&body=${body}`;
+    
+    // Your email goes in "to"
+    const to = 'balajipanchireddy@gmail.com';
+    // Visitor's email goes in "reply-to" so you can reply directly
+    const replyTo = encodeURIComponent(email);
+    
+    window.location.href = `mailto:${to}?reply-to=${replyTo}&subject=${subject}&body=${body}`;
   });
 }
 
