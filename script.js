@@ -86,3 +86,28 @@ if (window.matchMedia('(pointer: fine)').matches) {
     el.addEventListener('mouseleave', () => ring.classList.remove('hovering'));
   });
 }
+// ===== "Email me" button – same logic as the contact form =====
+const emailMeBtn = document.getElementById('email-me-btn');
+if (emailMeBtn) {
+  emailMeBtn.addEventListener('click', () => {
+    // Ask for name
+    const name = prompt('Please enter your name:');
+    if (name === null) return; // User cancelled
+
+    // Ask for email
+    const email = prompt('Please enter your email address:');
+    if (email === null) return;
+
+    // Ask for message
+    const message = prompt('What would you like to talk about?');
+    if (message === null) return;
+
+    // Build the mailto link exactly like the form
+    const subject = encodeURIComponent('Portfolio contact from ' + name);
+    const body = encodeURIComponent(message + '\n\n— from ' + email);
+    const to = 'balajipanchireddy@gmail.com';
+    const replyTo = encodeURIComponent(email);
+
+    window.location.href = `mailto:${to}?reply-to=${replyTo}&subject=${subject}&body=${body}`;
+  });
+}
