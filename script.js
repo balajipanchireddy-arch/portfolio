@@ -37,7 +37,7 @@ if (contactForm) {
     const message = document.getElementById('cf-message').value;
     const subject = encodeURIComponent('Portfolio contact from ' + name);
     const body = encodeURIComponent(message + '\n\n— from ' + email);
-    window.location.href = `mailto:you@example.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:balajipanchireddy@gmail.com?subject=${subject}&body=${body}`;
   });
 }
 
